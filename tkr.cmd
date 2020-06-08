@@ -1,0 +1,1 @@
+ffmpeg.exe -loop 1 -i "%1" -i "%2" -c:v libx264 -tune stillimage -c:a aac -strict experimental -b:a 192k -pix_fmt yuv420p -shortest "%3"
